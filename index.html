@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 16</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Escalação de times</h1>
+      <h2>Escalar Jogador</h2>
+    </header>
+
+    <section>
+      <div class="form-group">
+        <label for="position">Posição do Jogador(a):</label>
+        <input type="text" name="position" id="position" />
+      </div>
+
+      <div class="form-group">
+        <label for="name">Nome do Jogador(a):</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Número da camisa:</label>
+        <input type="number" name="number" id="number" min="0" />
+      </div>
+
+      <div class="form-group">
+        <label>Sexo:</label>
+        <input type="radio" name="radsex" id="mas" checked />
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem" />
+        <label for="fem">Feminino</label>
+      </div>
+
+      <button onclick="escalar()">Escalar</button>
+
+      <div id="res">Time</div>
+    </section>
+
+    <header>
+      <h2>Remover Jogador</h2>
+    </header>
+
+    <section>
+      <div class="form-group">
+        <label for="numberToRemove">Número da camisa:</label>
+        <input type="number" name="numberToRemove" id="numberToRemove" min="0" />
+      </div>
+
+      <button onclick="remover()">Remover</button>
+    </section>
+
+    <footer>
+      <p>&copy; TobiasAlvz</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
